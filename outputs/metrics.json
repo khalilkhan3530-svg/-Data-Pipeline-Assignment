@@ -1,0 +1,9 @@
+{
+    "total_rows": 7868,
+    "total_columns": 9,
+    "missing_descriptions": 0,
+    "missing_customer_ids": 2272,
+    "duplicate_rows": 0,
+    "negative_quantities": 110,
+    "zero_prices": 27
+}

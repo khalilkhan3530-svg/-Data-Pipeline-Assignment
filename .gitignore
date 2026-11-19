@@ -1,0 +1,17 @@
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environment
+venv/
+.venv/
+
+# Raw datasets
+data/raw/
+data/processed/retail_ml_data.csv
+online+retail/
+
+# Temporary files
+*.log
