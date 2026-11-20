@@ -1,3 +1,8 @@
+#Name : Muhammad khalil
+#ID : TRN-2026-000376
+#Date : 19-11-2026
+
+
 
 import pandas as pd
 
@@ -676,3 +681,29 @@ print("\nUnseen Data Predictions:")
 
 for product, prediction in zip(unseen_data["StockCode"], predictions):
     print(f"Product: {product}, Predicted Next-Day Sales: {prediction:.2f}")
+
+
+
+
+# Step 29: Residual Plot
+
+import matplotlib.pyplot as plt
+import os
+
+residuals = y_test.values - rf_predictions
+
+plt.figure(figsize=(8, 5))
+
+plt.scatter(rf_predictions, residuals, alpha=0.6)
+plt.axhline(y=0, linestyle="--")
+
+plt.xlabel("Predicted Sales")
+plt.ylabel("Residuals (Actual - Predicted)")
+plt.title("Random Forest Residual Plot")
+
+os.makedirs("outputs/figures", exist_ok=True)
+
+plt.savefig("outputs/figures/residual_plot.png")
+plt.close()
+
+print("Residual Plot Saved Successfully!")

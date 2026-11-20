@@ -1,3 +1,10 @@
+#Name : Muhammad khalil
+#ID : TRN-2026-000376
+#Date : 17-11-2026
+
+
+
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
